@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+}
+.container {
+  position: relative;
+  background-color: hsl(217, 19%, 24%);
+  width: 450px;
+  height: max-content;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  margin-left: -225px;
+  border-radius: 10px;
+}
+
+.main {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-size: 10px;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2px;
+  word-spacing: 1.5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.advice {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  word-spacing: 1.2px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+
+#divider {
+  width: 100%;
+  margin: 12px 0 30px;
+}
+
+.dice {
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -20px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(150, 100%, 66%);
+}
+.dice:hover {
+  transform: scale(1.2);
+  box-shadow: 1px 1px 12px hsl(193, 38%, 86%);
+}
+
+.dice img {
+  width: 15px;
+  height: 15px;
+}
+
+.attribution {
+  margin: 80px auto 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  color: white;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+}
+
+.attribution a {
+  margin: 0 0px 0px 5px;
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(193, 38%, 86%);
+  border-bottom: 1px solid hsl(150, 100%, 66%);
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 300px;
+    margin-left: -150px;
+  }
+}
